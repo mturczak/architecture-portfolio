@@ -10,8 +10,7 @@ const About = () => {
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed eleifend enim. Pellentesque blandit aliquet erat, nec commodo massa feugiat non. Class aptent taciti sociosqu
                     ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris pellentesque fringilla egestas. Aliquam maximus turpis quis aliquet fringilla. Praesent cursus mi ac sem
-                    accumsan, ut placerat est vehicula. Pellentesque convallis nulla vitae finibus finibus.
-                </p>
+                    accumsan, ut placerat est vehicula. Pellentesque convallis nulla vitae finibus finibus. 
             </div>
         </div>
     );

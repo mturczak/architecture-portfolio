@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/architecture-portfolio/static/css/main.a6b095f6.css",
+    "main.js": "/architecture-portfolio/static/js/main.478c18d3.js",
+    "static/media/background.jpg": "/architecture-portfolio/static/media/background.3cd5d7e7bc788f5e0dfe.jpg",
+    "static/media/interior1.webp": "/architecture-portfolio/static/media/interior1.a5bd11ff52726f4c9ba4.webp",
+    "static/media/logo.png": "/architecture-portfolio/static/media/logo.209915b4d36252959cf3.png",
+    "index.html": "/architecture-portfolio/index.html",
+    "main.a6b095f6.css.map": "/architecture-portfolio/static/css/main.a6b095f6.css.map",
+    "main.478c18d3.js.map": "/architecture-portfolio/static/js/main.478c18d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6b095f6.css",
+    "static/js/main.478c18d3.js"
+  ]
+}

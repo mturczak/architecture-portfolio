@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from './images/logo.png';
 import './Navbar.css';
+import logo from './images/logo.png';
 
 const Navbar = () => {
     const [clickList, setClickList] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <a href="/" className="logo">
                     <img src={logo} alt="logo" />
                 </a>
-                <div className="list-icon" onClick={handleClickList}>
+                <div className={!clickList ? 'list-icon' : 'list-icon active'} onClick={handleClickList}>
                     {clickList ? <FaTimes size={30} transi /> : <FaBars size={30} />}
                 </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/" onClick={closeList}>
+                        <a href="#home" onClick={closeList}>
                             Projects
                         </a>
                     </li>

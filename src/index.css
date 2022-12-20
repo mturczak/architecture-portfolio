@@ -5,6 +5,9 @@
     --secondary-dark: #d6ccc2;
     --overlay: hsla(23, 9%, 28%, 0.561);
 }
+* {
+    /* border: 0.1px solid red; */
+}
 
 body {
     margin: 0;

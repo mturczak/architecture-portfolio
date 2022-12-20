@@ -7,7 +7,8 @@
     z-index: 20;
     transition: 0.3s ease-in;
     overflow: hidden;
-    background-color: #f5ebe0ab;
+    opacity: 85%;
+    background-color: #f5ebe0;
 }
 
 .header .navbar {
@@ -29,9 +30,25 @@
     display: flex;
     z-index: 1000;
 }
+.header .navbar .list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    border-radius: 5px;
+    background: #f5ebe0ab;
+    box-shadow: 3px 3px 7px #9d968f, -3px -3px 7px #ffffff;
+}
 
 .header .navbar .list-icon:hover {
-    color: white;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #ddd4ca, #fffbf0);
+    box-shadow: 3px 3px 7px #9d968f, -3px -3px 7px #ffffff;
+}
+
+.header .navbar .list-icon.active {
+    box-shadow: inset 3px 3px 7px #d0c8be, inset -3px -3px 7px #ffffff;
 }
 
 .header .nav-menu .nav-item {
@@ -64,7 +81,6 @@
     }
     .list-icon {
         display: block;
-        transition: height 0.25s linear;
     }
     .nav-menu {
         position: fixed;

@@ -5,9 +5,15 @@ import logo from './images/logo.png';
 
 const Navbar = () => {
     const [clickList, setClickList] = useState(false);
+    const [tab, setTab] = useState('');
 
     const handleClickList = () => setClickList(!clickList);
-    const closeList = () => setClickList(false);
+    const closeList = (tab) => {
+        console.log(tab);
+        setTab(tab);
+        setClickList(false);
+    };
+
     return (
         <div className="header">
             <nav className="navbar">
@@ -20,22 +26,22 @@ const Navbar = () => {
 
                 <ul className={clickList ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <a href="#home" onClick={closeList}>
+                        <a name="home" className={tab === 'home' ? 'nav-link active' : 'nav-link'} href="#home" onClick={(e) => closeList(e.target.name)}>
                             Home
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#about" onClick={closeList}>
+                        <a className={tab === 'about' ? 'nav-link active' : 'nav-link'} href="#about" name="about" onClick={(e) => closeList(e.target.name)}>
                             About
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#home" onClick={closeList}>
+                        <a href="#home" className={tab === 'projects' ? 'nav-link active' : 'nav-link'} name="projects" onClick={(e) => closeList(e.target.name)}>
                             Projects
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#contact" onClick={closeList}>
+                        <a href="#contact" className={tab === 'contact' ? 'nav-link active' : 'nav-link'} name="contact" onClick={(e) => closeList(e.target.name)}>
                             Contact
                         </a>
                     </li>

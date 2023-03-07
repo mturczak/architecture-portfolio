@@ -27,6 +27,7 @@
     max-width: 1100px;
     margin: auto;
     padding: 1rem;
+    padding-bottom: 0;
 }
 
 .contact .container p,
